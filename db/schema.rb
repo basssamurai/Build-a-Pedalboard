@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20170915160102) do
     t.string "name"
     t.string "style"
     t.string "photo_url"
+    t.bigint "pedalboard_id"
+    t.index ["pedalboard_id"], name: "index_pedals_on_pedalboard_id"
   end
 
 end

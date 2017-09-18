@@ -10,7 +10,7 @@ class PedalsController < ApplicationController
 
   def create
     @pedal = Pedal.create!(pedal_params)
-    redirect_to pedal_path(@pedal)
+    redirect_to pedals_path
   end
 
   def show
@@ -35,6 +35,6 @@ class PedalsController < ApplicationController
 
   private
     def pedal_params
-      params.require(:pedal).permit(:name, :photo_url)
+      params.require(:pedal).permit(:name, :style, :photo_url, :pedalboard_id)
     end
   end

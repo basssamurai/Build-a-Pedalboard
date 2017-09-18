@@ -4,6 +4,7 @@ class CreatePedals < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :style
       t.string :photo_url
+      t.references :pedalboard
     end
   end
 end

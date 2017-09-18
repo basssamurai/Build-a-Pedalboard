@@ -1,2 +1,4 @@
-<h1>Pedalboards#edit</h1>
-<p>Find me in app/views/pedalboards/edit.html.erb</p>
+<h1>Edit Pedalboard</h1>
+
+<%= render 'form'%>
+<%= link_to 'Delete!', pedalboard_path(@pedalboard), method: :delete, class: 'delete' %>

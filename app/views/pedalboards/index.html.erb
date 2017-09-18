@@ -1,2 +1,9 @@
-<h1>Pedalboards#index</h1>
-<p>Find me in app/views/pedalboards/index.html.erb</p>
+<h1>Pedalboards<a href='/pedalboards/new'>(+)</a></h1>
+
+<ul>
+  <% @pedalboards.each do |pedalboard| %>
+    <li class = 'pedalboard_name'>
+      <%= link_to pedalboard.name, pedalboard_path(pedalboard) %>
+    </li>
+  <% end %>
+</ul>

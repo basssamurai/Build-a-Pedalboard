@@ -1,2 +1,3 @@
-<h1>Pedalboards#show</h1>
-<p>Find me in app/views/pedalboards/show.html.erb</p>
+<h2><%= @pedalboard.name %> <a href="/pedalboards/<%= @pedalboard.id %>/edit">(edit)</a></h2>
+
+<img class='pedalboard-photo' src="<%= @pedalboard.photo_url %>">
