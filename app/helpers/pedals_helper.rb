@@ -1,0 +1,2 @@
+module PedalsHelper
+end
