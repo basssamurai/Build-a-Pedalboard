@@ -10,7 +10,7 @@ class PedalsController < ApplicationController
 
   def create
     @pedal = Pedal.create!(pedal_params)
-    redirect_to pedals_path
+    redirect_to pedal_path(@pedal)
   end
 
   def show
