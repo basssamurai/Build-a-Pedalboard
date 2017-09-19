@@ -13,3 +13,75 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+background-image: url("http://eskipaper.com/images/wood-wallpaper-19.jpg");
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 50px;
+  background-color: black;
+  font-size: 100px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.create {
+  color: magenta;
+}
+
+a{
+  color: magenta;
+}
+
+.pedalboards {
+display: flex;
+flex-direction: column;
+margin: auto;
+justify-content: center;
+}
+
+#pedalrig_name {
+background-color: silver;
+border-style: solid;
+border-width: medium;
+border-color: black;
+border-radius: 10px;
+text-align: center;
+font-size: xx-large;
+width: 25%;
+margin: auto;
+align-items: center;
+padding: 10px 10px 10px 10px;
+}
+
+.pedals {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#stompbox_name {
+background-color: silver;
+border-style: solid;
+border-width: medium;
+border-color: black;
+border-radius: 25px;
+text-align: center;
+width: 10%;
+padding: 10px 10px 10px 10px;
+margin: 25px;
+}

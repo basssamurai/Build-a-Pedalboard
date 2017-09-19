@@ -1,12 +1,11 @@
 <h1>Pedals<a href='/pedals/new'>(+)</a></h1>
 
 <ul>
-  <!-- <% if @pedals.blank? %>
-    <h1>No Pedals</h1>
-    <% end %> -->
   <% @pedals.each do |pedal| %>
-    <li class = 'pedal_name'>
+  <div class = pedals>
+    <li id = 'stompbox_name'>
       <%= link_to pedal.name, pedal_path(pedal) %>
     </li>
+  </div>
   <% end %>
 </ul>

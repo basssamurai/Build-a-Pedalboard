@@ -1,9 +1,11 @@
-<h1>Pedalboards<a href='/pedalboards/new'>(+)</a></h1>
+<h1>Pedalboards<a class = 'create' href='/pedalboards/new'>(+)</a></h1>
 
 <ul>
   <% @pedalboards.each do |pedalboard| %>
-    <li class = 'pedalboard_name'>
+  <div class = pedalboards>
+      <li id = 'pedalrig_name'>
       <%= link_to pedalboard.name, pedalboard_path(pedalboard) %>
     </li>
+  </div>
   <% end %>
 </ul>
