@@ -1,3 +1,8 @@
 <h2><%= @pedalboard.name %> <a href="/pedalboards/<%= @pedalboard.id %>/edit">(edit)</a></h2>
 
 <img class='pedalboard-photo' src="<%= @pedalboard.photo_url %>">
+
+<% @pedalboard.pedals.each do |pedal| %>
+    <h3><%= pedal.name %></h3>
+    <%= image_tag pedal.photo_url %>
+    <% end %>

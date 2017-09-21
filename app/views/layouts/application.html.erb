@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>Build A Pedalboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    
+
     <% flash.each do |type, message| %>
   <p class="flash <%= type %>"><%= message %></p>
 <% end %>
