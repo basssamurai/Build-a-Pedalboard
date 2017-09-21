@@ -1,2 +1,4 @@
 # Build-a-Pedalboard
 Build a custom guitar/bass pedalboard by choosing a board and effects pedals to go on it.
+
+I used Rails to create a pedalboard planning app and Heroku to deploy the app.  The app allows you to create, edit, and delete pedalboards and pedals and add pedals to pedalboards.  This will allow users to plan out a pedal board before making purchases of boards or pedals.  The app has basic functionality right now but there are many features that I will be adding later.  I want to use a web audio API so the user can sample the sounds of the pedals and the signal chain they choose.  I also want to create scaled size requirements and a drag and drop feature so the user can place the pedals directly on the board to make sure everything fits(including cables).  Additionally I would love to add guitar, bass, and amp modeling and have that interact with the pedals.
