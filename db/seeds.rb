@@ -13,3 +13,4 @@ board1 = Pedalboard.create(name: 'Mondo', photo_url:'https://static.keymusic.com
 
 b3k = Pedal.create!(name: 'B3K', style: 'Overdrive', photo_url:'https://www.darkglass.com/app/uploads/2015/08/b3kk.png', pedalboard_id: 1 )
 b7k = Pedal.create!(name: 'B7K', style: 'Overdrive', photo_url:'https://www.darkglass.com/app/uploads/2015/08/b7k.png', pedalboard_id: 1 )
+ao = Pedal.create!(name: 'Alpha & Omega', style: 'Distortion', photo_url:'', pedalboard_id: 1 )

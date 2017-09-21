@@ -1,5 +1,9 @@
 <h1>Pedalboards<a class = 'create' href='/pedalboards/new'>(+)</a></h1>
 
+<p>
+<%= link_to "pedals", pedals_path %>
+</p>
+
 <ul>
   <% @pedalboards.each do |pedalboard| %>
   <div class = pedalboards>

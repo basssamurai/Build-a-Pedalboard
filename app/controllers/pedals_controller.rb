@@ -10,7 +10,10 @@ class PedalsController < ApplicationController
 
   def create
     @pedal = Pedal.create!(pedal_params)
+    if @pedal.save
+      flash[:notice] = 'Pedal was successfully created!'
     redirect_to pedal_path(@pedal)
+    end
   end
 
   def show
@@ -24,13 +27,13 @@ class PedalsController < ApplicationController
   def update
     @pedal = Pedal.find(params[:id])
     @pedal.update(pedal_params)
-    redirect_to pedal_path(@pedal)
+    redirect_to pedal_path(@pedal), notice: 'Pedal was updated!'
   end
 
   def destroy
     @pedal = Pedal.find(params[:id])
     @pedal.destroy
-    redirect_to pedals_path
+    redirect_to pedals_path, alert: 'Pedal has been obliterated!'
   end
 
   private
