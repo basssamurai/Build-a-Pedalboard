@@ -12,7 +12,7 @@ class PedalsController < ApplicationController
     @pedal = Pedal.create!(pedal_params)
     if @pedal.save
       flash[:notice] = 'Pedal was successfully created!'
-    redirect_to pedal_path(@pedal)
+      redirect_to pedal_path(@pedal)
     end
   end
 

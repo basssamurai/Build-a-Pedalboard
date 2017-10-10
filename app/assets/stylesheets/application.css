@@ -1,26 +1,32 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 
 body {
-background-image: url("http://eskipaper.com/images/wood-wallpaper-19.jpg");
-color: white;
-display: flex;
-justify-content: center;
-flex-direction: column;
-font-family: 'Orbitron', sans-serif;
+  background-image: url("http://eskipaper.com/images/wood-wallpaper-19.jpg");
+  color: white;
+  display: flex; /* Your images are being stretched out as a result of this
+  declaration. The flex-items, the contents of the body, such as an img tag in
+  your case, expand to fill the size of the container.
+
+  Check out this article:
+  https://stackoverflow.com/questions/37609642/why-does-flexbox-stretch-my-image
+  */
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Orbitron', sans-serif;
 }
 
 ul {
@@ -48,43 +54,43 @@ a{
 }
 
 .pedalboards {
-display: flex;
-flex-direction: column;
-margin: auto;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
 }
 
 #pedalrig_name {
-background-color: silver;
-border-style: solid;
-border-width: medium;
-border-color: black;
-border-radius: 10px;
-text-align: center;
-font-size: xx-large;
-width: 25%;
-margin: auto;
-align-items: center;
-padding: 10px 10px 10px 10px;
+  background-color: silver;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: xx-large;
+  width: 25%;
+  margin: auto;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
 }
 
 .pedals {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #stompbox_name {
-background-color: silver;
-border-style: solid;
-border-width: medium;
-border-color: black;
-border-radius: 25px;
-text-align: center;
-width: 10%;
-padding: 10px 10px 10px 10px;
-margin: 25px;
+  background-color: silver;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 25px;
+  text-align: center;
+  width: 10%;
+  padding: 10px 10px 10px 10px;
+  margin: 25px;
 }
 
 .flash {

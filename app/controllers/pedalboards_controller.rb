@@ -1,4 +1,7 @@
 class PedalboardsController < ApplicationController
+  # Nice clean controller code here. You can DRY some of this code up with before_action
+  # http://guides.rubyonrails.org/action_controller_overview.html#filters
+  # http://craftingruby.com/posts/2015/05/31/dont-use-before-action-to-load-data.html
 
   def index
     @pedalboards = Pedalboard.all
@@ -12,9 +15,9 @@ class PedalboardsController < ApplicationController
     @pedalboard = Pedalboard.create!(pedalboard_params)
     if @pedalboard.save
       flash[:notice] = 'Pedalboard was successfully created!'
-    redirect_to pedalboard_path(@pedalboard)
+      redirect_to pedalboard_path(@pedalboard)
+    end
   end
-end
 
   def show
     @pedalboard = Pedalboard.find(params[:id])
@@ -26,7 +29,7 @@ end
 
   def update
     @pedalboard = Pedalboard.find(params[:id])
-    @pedalboard.update(pedalboard_params)
+    @pedalboard.update(pedalboard_params) # Add conditional handling for update like you have in the  create method above
     redirect_to pedalboard_path(@pedalboard), notice: 'Pedalboard was updated!'
   end
 
@@ -37,7 +40,8 @@ end
   end
 
   private
-    def pedalboard_params
-      params.require(:pedalboard).permit(:name, :photo_url)
-    end
+
+  def pedalboard_params
+    params.require(:pedalboard).permit(:name, :photo_url)
+  end
   end
