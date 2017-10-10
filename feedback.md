@@ -1,5 +1,5 @@
 # Project 2 Evaluation
-[inline code comments]()
+
 ## Technical Requirements
 **2: Performing**
 >The app contains 2 models, with at least 1 association. At least 1 model is full CRUD.
@@ -19,4 +19,3 @@
 ## Planning / Process / Submission
 **1: Progressing**
 >App is submitted, with basic evidence of planning. Documentation exists, but lacks common areas such as setup instructions, description of application functionality and link to deployed application
-
