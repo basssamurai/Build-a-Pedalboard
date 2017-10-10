@@ -6,8 +6,9 @@
 
 <ul>
   <% @pedalboards.each do |pedalboard| %>
-  <div class = pedalboards>
-      <li id = 'pedalrig_name'>
+  <!-- Make sure to have clean HTML syntax -->
+  <div class="pedalboards">
+      <li id="pedalrig_name">
       <%= link_to pedalboard.name, pedalboard_path(pedalboard) %>
     </li>
   </div>
